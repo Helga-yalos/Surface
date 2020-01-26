@@ -1,19 +1,22 @@
-/*@font-face {
+@font-face {
   font-family: Open Sans;
-  src: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Open Sans;
-  src: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/fonts/OpenSans-Bold.woff");
+  src: url("../fonts/OpenSans-Bold.woff");
   font-weight: 700;
-  font-style: normal;*/
+  font-style: normal;
+}
 
 body {
    margin: 0;
    padding: 0;
    font-family: Open Sans, sans-serif;
+   min-width: 320px;
+
 }
 
 a {
@@ -23,7 +26,7 @@ a {
 .header {
   display: block;
   box-sizing: border-box;
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/football_767.jpg?raw=true");
+  background-image: url("../img/football_767.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #0a0e34;
@@ -47,19 +50,19 @@ a {
   display: block;
   position: relative;
   z-index: 2;
- /* width: 87.5%;*/
+  width: 87.5%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .container_header {
   padding-top: calc((100vmax - 235px) * 0.08);
-  width: 87.5%;
+  /*width: 87.5%;*/
+
 }
 
 .logo {
-  margin-left: calc(50% - 70px);
-  
+  text-align: center;
 }
 
 .logo_header {
@@ -82,19 +85,14 @@ a {
 }
 
 .title-call {
-  font-size: 28px;
- letter-spacing: 1px;
- color: #ffffff;
- text-transform: uppercase;
- font-weight: 700;
-  margin-left: 14vw;
+  margin-top: 15px;
+  display: flex;
+  padding-left: 17%;
+  justify-content: flex-end;
 }
 
-.btn_app {
-  /*width: 100%;
-  height: 35px;*/
-}
-.button_app{
+
+.btn_app{
   display: flex;
   align-items: center;
   width: 100%;
@@ -121,10 +119,10 @@ a {
   letter-spacing: 0px;
 }
 
-.app_download_1 {
+.app_download_get {
   font-weight: 400;
 }
-.app_download_2 {
+.app_download_store {
   font-weight: 700;
 }
 
@@ -140,6 +138,7 @@ a {
 
 .athlets {
   position:relative;
+  padding-top: 15px;
 }
 
 .section_name {
@@ -149,20 +148,19 @@ text-transform: uppercase;
 font-size: 50px;
 color: #e7e7e7;
 font-weight: 700;
-margin-top: 0.3em;
-margin-bottom: 0;
+margin: 0;
 padding-bottom: 240px;
 
 }
 .section_athlets {
- position: relative;
+ /*position: relative;*/
 }
 .footballer {
   position: absolute;
   top: 80px;
   right: 70px;
 }
-.athlets_arctical_01 {
+.athlets_article_connection {
   padding-left: 6.25%;
   padding-right: 6.25%;
   padding-top: 80px;
@@ -170,14 +168,14 @@ padding-bottom: 240px;
   background-color: #fafafa;
 }
 
-.artical_title {
+.article_title {
   display: flex;
   flex-direction: row;
   align-items: center;
 
 }
 
-.artical_header {
+.article_header {
   font-size: 23px;
 letter-spacing: 1px;
 
@@ -189,7 +187,7 @@ padding: 0;
 
 }
 
-.number_artical {
+.number_article {
  font-size: 14px;
  letter-spacing: 1px;
  font-weight: 700;
@@ -198,7 +196,7 @@ padding: 0;
  margin-right: 10px;
 }
 
-.number_artical::after {
+.number_article::after {
    content: "";
    width: 17px;
    height: 4px;
@@ -207,17 +205,14 @@ padding: 0;
    display: block;
   
 }
-.artical_text {
-  margin-right: 6.5%
-  margin-left: 6.5%;
+.article_text {  
   font-size: 15px;
- font-size: 15px;
  letter-spacing: 1px;
  font-weight: 400;
  color: #000000;
 }
 
-.athlets_arctical_02 {
+.athlets_article_collaboration {
   padding-left: 6.25%;
   padding-right: 6.25%;
   padding-top: 60px;
@@ -226,14 +221,14 @@ padding: 0;
 
 }
 
-.athlets_arctical_03 {
+.athlets_article_growth {
   background-color: #5e42b0;
   padding-left: 6.25%;
   padding-right: 6.25%;
   padding-top: 60px;
   padding-bottom: 55px;
 }
-.number_artical_03 {
+.number_article_growth {
   font-size: 14px;
  letter-spacing: 1px;
  font-weight: 700;
@@ -242,7 +237,7 @@ padding: 0;
  margin-right: 10px;
 }
 
-.number_artical_03::after {
+.number_article_growth::after {
    content: "";
    width: 17px;
    height: 4px;
@@ -261,32 +256,31 @@ padding: 0;
   /*left: 10px;*/
 }
 
-.arctical_text_03 {
+.article_text_growth {
   color: #ffffff;
 }
-.number_player_03 {
+.number_player_growth {
   color: #8765dd;;
 }
-.players_arctical {
+.players_article {
   background-color: #090c35;
 }
 
-.section_active {
-  max-width: 100%;
-  min-height: 66vh;
-  display: block;
+.active {
   box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #ffffff;
-  background-size: cover;
+ display: flex;
+ flex-wrap: wrap;
+
+}
+
+.img_active {
+  display: block;
+  max-width: 100%;
+
+}
+.section_article {
   position: relative;
 }
-
-.section_active_01{
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/be-active_640.jpg?raw=true");
-}
-
 .section_active_number {
   width: 70px;
 height: 70px;
@@ -295,7 +289,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: absolute;
-bottom: -12px;
+top: -60px;
 left: 6.5%;
 }
 
@@ -309,24 +303,27 @@ font-weight: 700;
 
 .active_number::after {
    content: "";
-   width: 15px;
+   width: 16px;
    height: 4px;
    border-radius: 1px;   
    background-color: #ffffff;
    opacity: 0.3;
    display: block;
 }
-
+.section_article {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
 .section_header {
 font-size: 28px;
 letter-spacing: 1px;
 color: #e7e7e7;
 font-weight: 700;
-margin-top: 30px;
+margin-top: 0px;
 margin-bottom: 20px;
-padding-left: 6.25%;
-  padding-right: 6.25%;
-  text-transform: uppercase;
+text-transform: uppercase;
 }
 
 .section_text {
@@ -335,23 +332,13 @@ letter-spacing: 1px;
 line-height: 20px;
 color: #000000;
 font-weight: 400;
-padding-left: 6.25%;
-  padding-right: 6.25%;
-  margin-bottom: 80px;
-}
-
-.section_contact {
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/find-contact_640.jpg?raw=true");
-}
-
-.section_work {
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/work-it_640.jpg?raw=true");
+margin: 0;
 }
 
 .footer {
   display: block;
   box-sizing: border-box;
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/game_767.jpg?raw=true");
+  background-image: url("../img/game_767.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #0a0e34;
@@ -433,11 +420,15 @@ padding: 0;
 
 @media (min-width: 641px) and (max-width: 960px) {
 
+.header {
+  background-image: url("../img/football_1280.jpg");
+}
+
 .logo_surface {
   width: 210px;
 }
 .logo {
-  margin-left: calc(50% - 105px);
+  text-align: center;
 }
 
 .title-tagline {
@@ -450,13 +441,9 @@ padding: 0;
 }
 
 .title-call {
-   margin: 0;
-  padding: 0;
-  font-size: 64px;
-  line-height: 75px;
- letter-spacing: 3px;
-  margin-left: 14vw;
-  
+  display: flex;
+  padding-left: 10%;
+  justify-content: flex-end;
 }
 
 .download_header , .download_footer {
@@ -464,16 +451,17 @@ padding: 0;
   justify-content: space-between;
 }
 
-.button_app{
-  width: 315px;
+.btn_app{
+  width: 47.7%;
   height: 76px;
-  border-radius: 40px;
+  border-radius: 38px;
+  justify-content: center;
   
 
 }
 .app_svg {
   margin-right: 30px;
-  margin-left: 45px;
+  margin-left: 0px;
   
 }
 .logo_app {
@@ -490,10 +478,10 @@ padding: 0;
   letter-spacing: 1px;
 }
 
-.app_download_1 {
+.app_download_get {
   font-weight: 300;
 }
-.app_download_2 {
+.app_download_store {
   font-weight: 700;
 }
 
@@ -512,9 +500,11 @@ padding: 0;
 .download_header {
   margin-top: calc((100vmax - 360px) * 0.5);
 }
-
+.athlets, .players {
+  padding-top: 83px;
+}
 .footballer {
-  top: 10px;
+  top: 90px;
   right: 57%;
   }
 
@@ -527,12 +517,11 @@ font-size: 80px;
 line-height: 60px;
 color: #e7e7e7;
 font-weight: 700;
-margin-top: 0.8em;
 margin-bottom: 0.6em;
 }
 
 
-.athlets_arctical_01 {
+.athlets_article_connection {
   padding-left: 38%;
   padding-right: 4.3%;
   padding-top: 0px;
@@ -540,13 +529,13 @@ margin-bottom: 0.6em;
   background-color: #ffffff;
 }
 
-.artical_title {
+.article_title {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.artical_header {
+.article_header {
   font-size: 32px;
 letter-spacing: 2px;
 color: #c1c1c1;
@@ -556,7 +545,7 @@ padding: 0;
 
 }
 
-.number_artical {
+.number_article {
  font-size: 18px;
  letter-spacing: 1px;
  font-weight: 700;
@@ -564,15 +553,15 @@ padding: 0;
  margin-right: 10px;
 }
 
-.number_artical::after {
-   width: 19px;
+.number_article::after {
+   width: 21px;
    height: 5px;
    border-radius: 2px;
    background-color: #5e42b0;
    display: block;
   
 }
-.artical_text {
+.article_text {
   margin-right: 0;
   margin-left: 0;
   font-size: 16px;
@@ -582,7 +571,7 @@ padding: 0;
   color: #000000;
 }
 
-.athlets_arctical_02 {
+.athlets_article_collaboration {
   padding-left: 38%;
   padding-right: 4.3%;
   padding-top: 25px;
@@ -590,14 +579,14 @@ padding: 0;
   background-color: #f5f4f9;
 }
 
-.athlets_arctical_03 {
+.athlets_article_growth {
   background-color: #5e42b0;
   padding-left: 38%;
   padding-right: 4.3%;
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.number_artical_03 {
+.number_article_growth {
  font-size: 18px;
  letter-spacing: 1px;
  font-weight: 700;
@@ -605,40 +594,38 @@ padding: 0;
  margin-right: 10px;
 }
 
-.number_artical_03::after {
-   width: 19px;
+.number_article_growth::after {
+   width: 21px;
    height: 5px;
    border-radius: 2px;
    background-color: #ffffff;
 }
 
-.arctical_text_03 {
+.article_text_growth {
   color: #ffffff;
 }
 
-.section_players , .players_arctical_01 , .players_arctical_02 , .players_arctical {
+.section_players , .players_article_connection , .players_article_collaboration , .players_article {
   padding-left: 4.3%;
   padding-right: 40%;
 }
-.players_arctical {
+.players_article {
   background-color: #090c35;
 }
-.number_player_03 {
+.number_player_growth {
   color: #8765dd;
 }
 .basketballer {
-  top: -40px;
+  top: 45px;
   right: 0px;
+
 }
 
-.section_active_01{
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/be-active_960.jpg?raw=true");
-}
 
 .section_active_number {
   width: 116px;
   height: 116px;
-  bottom: -35px;
+  top: -80px;
   left: 4.3%;
 }
 
@@ -647,40 +634,35 @@ padding: 0;
 }
 
 .active_number::after {
-   width: 25px;
+   width: 28px;
    height: 5px;
    border-radius: 2px;
 }
 
+.section_article {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  padding-left: 4.3%;
+  padding-right: 4.3%;
+}
 .section_header {
   font-size: 80px;
+  line-height: 60px;
   color: #c1c1c1;
   opacity: 0.4;
   letter-spacing: 0px;
-  margin-top: 60px;
-  margin-bottom: 10px;
-  padding-left: 4.3%;
-  padding-right: 4.3%;
+  margin-bottom: 35px;
 }
 
 .section_text {
   font-size: 24px;
   line-height: 28px;
-  padding-left: 4.3%;
-  padding-right: 4.3%;
-  margin-bottom: 100px;
+
 }
 
-.section_contact {
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/find-contact_960.jpg?raw=true");
-}
-
-.section_work {
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/work-it_960.jpg?raw=true");
-}
 
 .footer {
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/game_1280.jpg?raw=true");
+  background-image: url("../img/game_1280.jpg");
  }
 
 .container_footer {
@@ -738,7 +720,7 @@ color: #a496ca;
 @media (min-width: 961px) {
 
 .header {
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/football_1920.jpg?raw=true");
+  background-image: url("../img/football_1920.jpg");
   height: auto;
 }
 
@@ -752,29 +734,23 @@ color: #a496ca;
 .container_header {
   padding-top: 40px;
 }
-
-.logo {
-  margin-left: calc(50% - 97px);
   
-}
 .logo_surface {
   width: 194px;
 }
 
 .title-tagline {
-  font-size: 90px;
-letter-spacing: 5px;
-line-height: 90px;
+ font-size: 60px;
+letter-spacing: 3px;
+line-height: 60px;
 margin: 0;
-
 }
 
-.title-call {
-  font-size: 90px;
-letter-spacing: 5px;
-line-height: 90px;
-margin: 0;
-text-align: end;
+.title-call { 
+  display: flex;
+  padding-left: 2%;
+  justify-content: flex-end;
+
 }
 
 .download_header , .download_footer {
@@ -784,29 +760,31 @@ text-align: end;
 
 .logo_app {
   fill: #ffffff;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .apple_download {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1px;
 }
 
-.button_app{
-  width: 310px;
-  height: 76px;
-  border-radius: 38px;
+.btn_app{
+  width: 260px;
+  height: 70px;
+  border-radius: 35px;
+  justify-content: center;
+
 
 }
 .app_svg {
-  margin-right: 25px;
-  margin-left: 35px;
+  margin-right: 20px;
+  margin-left: 0px;
 }
 .google_svg {
-  margin-left: 50px;
+  margin-left: 0px;
 }
 
 .btn_app:nth-child(2n) {
@@ -828,25 +806,32 @@ text-align: end;
   margin-bottom: 290px;
 }
 
-
+.content {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.athlets, .players {
+  padding-top: 110px;
+}
 .footballer {
-  top: -90px;
+  top: 20px;
   right: 50%;
   }
+
 
 .section_name {
   margin: 0;
 padding: 0;
 padding-right: 10.2%;
 padding-left: 52.5%;
-font-size: 80px;
+font-size: 60px;
 line-height: 60px;
-margin-top: 110px;
 margin-bottom: 100px;
 }
 
 
-.athlets_arctical_01 {
+.athlets_article_connection {
   padding-left: 52.5%;
   padding-right: 10.2%;
   padding-top: 0px;
@@ -854,7 +839,7 @@ margin-bottom: 100px;
   background-color: #ffffff;
 }
 
-.artical_header {
+.article_header {
   font-size: 36px;
 letter-spacing: 2px;
 color: #c1c1c1;
@@ -864,7 +849,7 @@ padding: 0;
 
 }
 
-.number_artical {
+.number_article {
  font-size: 18px;
  letter-spacing: 1px;
  font-weight: 700;
@@ -872,14 +857,14 @@ padding: 0;
  margin-right: 10px;
 }
 
-.number_artical::after {
-   width: 19px;
+.number_article::after {
+   width: 21px;
    height: 5px;
    border-radius: 2px;
    background-color: #5e42b0;
   
 }
-.artical_text {
+.article_text {
   margin-right: 0;
   margin-left: 0;
   font-size: 20px;
@@ -889,7 +874,7 @@ padding: 0;
   color: #000000;
 }
 
-.athlets_arctical_02 , .athlets_arctical_03 {
+.athlets_article_collaboration , .athlets_article_growth {
   padding-left: 52.5%;
   padding-right: 10.2%;
   padding-top: 55px;
@@ -897,11 +882,11 @@ padding: 0;
   background-color: #f5f4f9;
 }
 
-.athlets_arctical_03 {
+.athlets_article_growth {
   background-color: #5e42b0;
 }
 
-.number_artical_03 {
+.number_article_growth {
  font-size: 18px;
  letter-spacing: 1px;
  font-weight: 700;
@@ -909,62 +894,74 @@ padding: 0;
  margin-right: 10px;
 }
 
-.number_artical_03::after {
-   width: 19px;
+.number_article_growth::after {
+   width: 21px;
    height: 5px;
    border-radius: 2px;
    background-color: #ffffff;
 }
 
-.arctical_text_03 {
+.article_text_growth {
   color: #ffffff;
 }
 
-.section_players , .players_arctical_01 , .players_arctical_02 , .players_arctical {
+.section_players , .players_article_connection , .players_article_collaboration , .players_article {
   padding-left: 10%;
   padding-right: 50.6%;
 }
-.players_arctical {
+.players_article {
   background-color: #090c35;
 }
-.number_player_03 {
+.number_player_growth {
   color: #8765dd;
 }
 .basketballer {
-  top: -90px;
+  top: 20px;
   right: 0;
   left: calc(50% - 100px);
-  overflow: auto;
+   overflow: hidden;
 }
 
-.active, .contact, .work {
-  display: flex;
-  align-items: center;
+.section_active , .section_work , .section_contact {
+ display: flex;
+ max-width: 1920px;
+ margin: 0 auto;
+ align-items: center;
 }
-.section_active {
+.active {
   width: 50%;
 }
-.section_active_01{
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/be-active_1024.jpg?raw=true");
-}
+
 .section_article {
+  box-sizing:border-box;
   width: 50%;
+  padding: 0;
+  padding-left: 6%;
+  padding-right: 9%;
+}
+.section_article_contact {
+  padding-right: 6%;
+  padding-left: 9%;
+}
+
+.section_article_contact {
+  order: -1;
 }
 .section_active_number {
-  width: 17.5%;
-  height: 0;
-  padding-top: calc(8.5% - 7px);
-  padding-bottom: calc(8.5% - 1px);
+  width: 100px;
+  height: 100px;
+  /*padding-top: calc(8.5% - 7px);
+  padding-bottom: calc(8.5% - 1px);*/
 
-  bottom: 50%;
-  left: 91.5%;
+  top: -30px;
+  left: -50px;
 }
-.section_contact > .section_active_number {
-  left: -8.5%;
+.section_article_contact > .section_active_number {
+  left: calc(100% - 50px);
 }
 
 .active_number {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .active_number::after {
@@ -975,41 +972,28 @@ padding: 0;
 
 
 .section_header {
-  font-size: 80px;
+  padding:0;
+  font-size: 40px;
+  line-height: 40px;
   color: #c1c1c1;
   opacity: 0.4;
   letter-spacing: 0px;
   margin-bottom: 10%;
-  padding-left: 13.5%;
-  padding-right: 20%;
+  
 }
 
 .section_text {
-  font-size: 24px;
-  line-height: 28px;
-  padding-left: 13.5%;
-  padding-right: 20%;
-}
-.section_article_contact > .section_header , .section_article_contact > .section_text {
-  padding-right: 13.5%;
-  padding-left: 20%;
+  padding:0;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .section_article_contact > .section_header{
   margin-bottom: 6%;
 }
 
-.section_contact {
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/find-contact_1024.jpg?raw=true");
-  order: 2;
-}
-
-.section_work {
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/work-it_1024.jpg?raw=true");
-}
-
 .footer {
-  background-image: url("https://github.com/Helga-yalos/mq-diploma/blob/master/sources/img/game_1920.jpg?raw=true");
+  background-image: url("../img/game_1920.jpg");
   height: auto;
 }
 
@@ -1018,6 +1002,65 @@ padding: 0;
   width: 90%;
   padding-bottom: 50px;
 }
+.img_logo_surface {
+  fill: #ffffff;
+  width: 75px;
+  height: 62px;
+  margin-top: 17px;
+  margin-left: 8px;
+}
+
+.img_logo {
+  width: 95px;
+  height: 95px;
+  border-radius: 18px;
+  margin: 0;
+  margin-right: 25px;
+}
+
+.footer_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.footer_header {
+  font-size: 60px;
+letter-spacing: 2px;
+line-height: 60px;
+margin: 0;
+}
+
+.footer_text {
+ font-size: 27px;
+line-height: 30px;
+color: #a496ca;
+margin: 0;
+text-align: start;
+
+}
+.download_footer {
+  margin-top: 145px;
+  margin-bottom: 255px;
+}
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1400px) {
+
+  .title-tagline {
+  font-size: 90px;
+  letter-spacing: 5px;
+  line-height: 90px;
+}
+
 .img_logo_surface {
   fill: #ffffff;
   width: 105px;
@@ -1034,17 +1077,72 @@ padding: 0;
   border-radius: 25px;
   margin: 0;
   margin-right: 35px;
-  
- /* margin-bottom: calc((100vmax - 250px) * 0.18);*/
-  /*margin-top: 100px;*/ /*__vmax*/
+}
+.logo_app {
+  fill: #ffffff;
+  width: 50px;
+  height: 50px;
 }
 
-.footer_main {
+.apple_download {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
+  flex-direction: column;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
+
+.btn_app{
+  width: 310px;
+  height: 76px;
+  border-radius: 38px;
+}
+
+.section_name {
+ font-size: 80px;
+}
+.section_active_number {
+  width: 132px;
+  height: 132px;
+  /*padding-top: calc(8.5% - 7px);
+  padding-bottom: calc(8.5% - 1px);*/
+
+  top: -35px;
+  left: -66px;
+}
+.section_article_contact > .section_active_number {
+  left: calc(100% - 66px);
+}
+.active_number {
+  font-size: 24px;
+}
+
+.active_number::after {
+   width: 28px;
+}
+.section_header {
+  font-size: 60px;
+  line-height: 60px;
+}
+.section_text {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.img_logo_surface {
+  fill: #ffffff;
+  width: 105px;
+  height: 90px;
+  margin-top: 25px;
+  margin-left: 12px;
+}
+.img_logo {
+  width: 135px;
+  height: 135px;
+  border-radius: 25px;
+  margin: 0;
+  margin-right: 35px;
+}
+
 .footer_header {
   font-size: 80px;
 letter-spacing: 4px;
@@ -1055,22 +1153,27 @@ margin: 0;
 .footer_text {
  font-size: 30px;
 line-height: 34px;
-color: #a496ca;
-margin: 0;
-text-align: start;
-
 }
-.download_footer {
-  margin-top: 145px;
-  margin-bottom: 255px;
 }
 
 
 
+@media (min-width: 1700px) {
 
-
-
-
-
-
+  .section_header {
+  font-size: 80px;
+  line-height: 60px;
+}
+.section_text {
+  font-size: 24px;
+  line-height: 28px;
+}
+.section_active_number {
+  width: 168px;
+  height: 155px;
+  top: -45px;
+  left: -84px;
+}
+.section_article_contact > .section_active_number {
+  left: calc(100% - 84px);
 }
