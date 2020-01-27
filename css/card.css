@@ -91,7 +91,11 @@ a {
   justify-content: flex-end;
 }
 
-
+.download_header , .download_footer {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .btn_app {
   display: flex;
   align-items: center;
@@ -457,6 +461,7 @@ padding: 0;
 }
 
 .download_header , .download_footer {
+  max-width: 660px;
   display: flex;
   justify-content: space-between;
 }
@@ -628,10 +633,10 @@ padding: 0;
 }
 .basketballer {
   top: 45px;
-  right: 0px;
-
+  right: 0;
+  left: 46%;
+  overflow: hidden;
 }
-
 
 .section_active_number {
   width: 116px;
@@ -713,8 +718,8 @@ color: #a496ca;
 
 }
 .download_footer {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: calc((100vmax - 420px) * 0.51);
   margin-bottom: calc((100vmax - 420px) * 0.082);
 }
@@ -733,6 +738,9 @@ color: #a496ca;
   font-size: 36px;
 line-height: 60px;
 letter-spacing: 0px;
+}
+.basketballer {
+  left: calc(100% - 436px);
 }
 
 }
@@ -778,6 +786,7 @@ margin: 0;
 .download_header , .download_footer {
   display: flex;
   justify-content: center;
+  max-width: 700px;
 }
 
 .logo_app {
