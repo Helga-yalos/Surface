@@ -435,7 +435,9 @@ padding: 0;
 .header {
   background-image: url("../img/football_1280.jpg");
 }
-
+.container {
+  width: 94%;
+}
 .logo_surface {
   width: 210px;
 }
